@@ -3,6 +3,7 @@ Welcome to `components/discounts`!
 This directory contains components related to discounts in the cash register system. Below is an overview of the files and their purposes:
 
 - `discount_entity.rb`: This file defines the `DiscountEntity`, which is responsible for representing a discount in the domain.
+- `discount.rb`: This file defines the `Discount` model, which represents a discount in the cash register system database. It includes attributes such as product_code, discount type, and args.
 - Services:
   - `no_discount_service.rb`: This file defines the `NoDiscountService`, which implements a strategy for handling scenarios where no discount is applied to a product.
   - `free_item_discount_service.rb`: This file defines the `FreeItemDiscountService`, which implements a strategy for applying a "buy one, get one free" discount to products.
