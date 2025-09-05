@@ -10,7 +10,9 @@ require 'debug' if ENV['RUBY_ENV'] == 'development'
 APP_VERSION = '1.0.0'
 
 module Application
-  LOAD_PATHS = %w[].freeze
+  LOAD_PATHS = %w[
+    components/*/app/*/
+  ].freeze
 
   def self.initialize!
     zeitwerk_loader!
