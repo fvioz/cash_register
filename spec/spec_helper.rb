@@ -4,6 +4,7 @@
 ENV['RUBY_ENV'] ||= 'test'
 
 require_relative '../environment'
+require_relative 'packs'
 
 require 'rspec'
 require 'sorbet-runtime'
