@@ -9,6 +9,10 @@ gem 'bootsnap', '~> 1.18', require: false
 gem 'sorbet-static-and-runtime', '~> 0.6.12479'
 gem 'zeitwerk', '~> 2.7'
 
+# CLI
+gem 'cli-ui', '~> 2.4'
+gem 'thor', '~> 1.4'
+
 # Utilities
 gem 'money', '~> 6.19'
 

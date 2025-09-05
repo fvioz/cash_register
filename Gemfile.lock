@@ -36,6 +36,7 @@ GEM
     brakeman (7.1.0)
       racc
     builder (3.3.0)
+    cli-ui (2.4.0)
     code_ownership (1.39.0)
       code_teams (~> 1.0)
       packs-specification
@@ -261,6 +262,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (~> 1.18)
   brakeman
+  cli-ui (~> 2.4)
   debug
   money (~> 6.19)
   packs
@@ -273,6 +275,7 @@ DEPENDENCIES
   simplecov
   sorbet-static-and-runtime (~> 0.6.12479)
   tapioca
+  thor (~> 1.4)
   zeitwerk (~> 2.7)
 
 RUBY VERSION
