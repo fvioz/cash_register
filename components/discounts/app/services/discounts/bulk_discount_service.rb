@@ -4,7 +4,6 @@
 module Discounts
   class BulkDiscountService
     extend T::Sig
-    include Kernel
 
     include Concerns::Discountable
 

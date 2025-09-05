@@ -6,10 +6,10 @@ require 'bigdecimal/util'
 
 module Discounts
   class Discount
+    Model = Struct.new(:product_code, :discount_type, :args)
+
     class << self
       extend T::Sig
-
-      Model = Struct.new(:product_code, :discount_type, :args)
 
       # In a real application, this would fetch data from a database.
       # Here, we hardcode some discounts for demonstration purposes.
@@ -18,7 +18,7 @@ module Discounts
         [
           Model.new('GR1', 'FreeItemDiscount', {}),
           Model.new('SR1', 'BulkDiscount', { threshold: 3, unit_price: BigDecimal('4.50') }),
-          Model.new('CR1', 'Percentage', { threshold: 3, percentage: (1 - Rational(2, 3).to_d(10)) * 100 })
+          Model.new('CF1', 'PercentageDiscount', { threshold: 3, percentage: (1 - Rational(2, 3).to_d(10)) * 100 })
         ].freeze
       end
 

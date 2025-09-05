@@ -3,10 +3,10 @@
 
 module Products
   class Product
+    Model = Struct.new(:code, :name, :price)
+
     class << self
       extend T::Sig
-
-      Model = Struct.new(:code, :name, :price)
 
       # In a real application, this would fetch data from a database.
       # Here, we hardcode some products for demonstration purposes.
@@ -15,7 +15,7 @@ module Products
         [
           Model.new('GR1', 'Green tea', BigDecimal('3.11')),
           Model.new('SR1', 'Strawberries', BigDecimal('5.00')),
-          Model.new('CR1', 'Coffee', BigDecimal('11.23'))
+          Model.new('CF1', 'Coffee', BigDecimal('11.23'))
         ].freeze
       end
 
