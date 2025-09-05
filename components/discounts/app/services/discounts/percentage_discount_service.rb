@@ -20,12 +20,12 @@ module Discounts
       raise ArgumentError, 'Percentage must be between 0 and 100'
     end
 
-    sig { override.params(price: BigDecimal, quantity: Integer).returns(DiscountCalculationType) }
+    sig { override.params(price: BigDecimal, quantity: Integer).returns(DiscountEntity) }
     def calculate(price, quantity)
-      {
-        total_discount: total_discount(price, quantity),
-        total_price: total_price(price, quantity)
-      }
+      DiscountEntity.new(
+        total_price(price, quantity),
+        total_discount(price, quantity)
+      )
     end
 
     private

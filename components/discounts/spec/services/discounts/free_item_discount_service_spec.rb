@@ -14,11 +14,11 @@ RSpec.describe Discounts::FreeItemDiscountService, type: :service do
       let(:quantity) { 0 }
 
       it 'returns zero total total price' do
-        expect(result[:total_price]).to eq(BigDecimal(0))
+        expect(result.total_price).to eq(BigDecimal(0))
       end
 
       it 'returns zero total discount' do
-        expect(result[:total_discount]).to eq(BigDecimal(0))
+        expect(result.total_discount).to eq(BigDecimal(0))
       end
     end
 
@@ -26,11 +26,11 @@ RSpec.describe Discounts::FreeItemDiscountService, type: :service do
       let(:quantity) { 4 }
 
       it 'returns the correct total total price' do
-        expect(result[:total_price]).to eq(BigDecimal(4))
+        expect(result.total_price).to eq(BigDecimal(4))
       end
 
       it 'returns the correct total discount' do
-        expect(result[:total_discount]).to eq(BigDecimal(4))
+        expect(result.total_discount).to eq(BigDecimal(4))
       end
     end
 
@@ -38,11 +38,11 @@ RSpec.describe Discounts::FreeItemDiscountService, type: :service do
       let(:quantity) { 3 }
 
       it 'returns the correct total total price' do
-        expect(result[:total_price]).to eq(BigDecimal(4))
+        expect(result.total_price).to eq(BigDecimal(4))
       end
 
       it 'returns the correct total discount' do
-        expect(result[:total_discount]).to eq(BigDecimal(2))
+        expect(result.total_discount).to eq(BigDecimal(2))
       end
     end
   end

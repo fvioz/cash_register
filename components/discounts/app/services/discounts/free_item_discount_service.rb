@@ -7,14 +7,14 @@ module Discounts
 
     include Concerns::Discountable
 
-    sig { override.params(price: BigDecimal, quantity: Integer).returns(DiscountCalculationType) }
+    sig { override.params(price: BigDecimal, quantity: Integer).returns(DiscountEntity) }
     def calculate(price, quantity)
       total_price = total_price(price, quantity)
 
-      {
-        total_discount: (price * quantity) - total_price,
-        total_price: total_price
-      }
+      DiscountEntity.new(
+        total_price,
+        (price * quantity) - total_price
+      )
     end
 
     private

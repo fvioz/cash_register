@@ -7,9 +7,11 @@ module Discounts
       extend T::Sig
       extend T::Helpers
 
+      include Kernel
+
       interface!
 
-      sig { abstract.params(price: BigDecimal, quantity: Integer).returns(DiscountCalculationType) }
+      sig { abstract.params(price: BigDecimal, quantity: Integer).returns(DiscountEntity) }
       def calculate(price, quantity); end
     end
   end
