@@ -9,6 +9,9 @@ gem 'bootsnap', '~> 1.18', require: false
 gem 'sorbet-static-and-runtime', '~> 0.6.12479'
 gem 'zeitwerk', '~> 2.7'
 
+# Utilities
+gem 'money', '~> 6.19'
+
 group :development do
   gem 'ruby-lsp-rspec', require: false
   gem 'ruby_parser', '~> 3.21'

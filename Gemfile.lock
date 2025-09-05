@@ -70,6 +70,8 @@ GEM
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     minitest (5.25.5)
+    money (6.19.0)
+      i18n (>= 0.6.4, <= 2)
     msgpack (1.8.0)
     netrc (0.11.0)
     nokogiri (1.18.9-aarch64-linux-gnu)
@@ -260,6 +262,7 @@ DEPENDENCIES
   bootsnap (~> 1.18)
   brakeman
   debug
+  money (~> 6.19)
   packs
   rspec (~> 3.13)
   rubocop
