@@ -1,0 +1,6 @@
+--dir
+.
+--ignore=config/
+--ignore=sorbet/
+--ignore=tmp/
+--ignore=vendor/
