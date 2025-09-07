@@ -9,6 +9,8 @@ require 'debug' if ENV['RUBY_ENV'] == 'development'
 
 APP_VERSION = '1.0.0'
 
+Bundler.require(ENV['RUBY_ENV'] || 'development')
+
 module Application
   LOAD_PATHS = %w[
     app
