@@ -11,6 +11,7 @@ APP_VERSION = '1.0.0'
 
 module Application
   LOAD_PATHS = %w[
+    app
     components/*/app/*/
   ].freeze
 
