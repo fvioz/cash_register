@@ -3,4 +3,4 @@
 
 require_relative File.expand_path('../environment', __dir__)
 
-load Gem.bin_path('packs', 'packs')
+load Gem.bin_path('sorbet', 'srb')

@@ -36,7 +36,7 @@ class PacksIntegration
 
   sig { params(parent_pack: ::Packs::Pack).returns(T::Array[::Packs::Pack]) }
   def nested_packs_for(parent_pack)
-    Packs.all.select do |pack|
+    ::Packs.all.select do |pack|
       pack.name != parent_pack.name && pack.name.include?(parent_pack.name)
     end
   end

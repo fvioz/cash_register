@@ -2,6 +2,6 @@
 # frozen_string_literal: true
 
 require 'irb'
-require_relative '../environment'
+require_relative File.expand_path('../environment', __dir__)
 
 IRB.start

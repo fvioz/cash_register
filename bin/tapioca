@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require_relative '../environment'
+require_relative File.expand_path('../environment', __dir__)
 
 load Gem.bin_path('tapioca', 'tapioca')

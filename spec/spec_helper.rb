@@ -3,13 +3,10 @@
 
 ENV['RUBY_ENV'] ||= 'test'
 
-require_relative '../environment'
-require_relative 'packs'
+require_relative File.expand_path('../environment', __dir__)
+require_relative 'packs_integration'
 
-require 'rspec'
-require 'sorbet-runtime'
 require 'simplecov'
-
 SimpleCov.start
 
 RSpec.configure do |config|
