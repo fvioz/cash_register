@@ -8,6 +8,12 @@ Style/Documentation:
 RSpec/NestedGroups:
   Enabled: false
 
+Style/ArgumentsForwarding:
+  Enabled: false
+
+Naming/BlockForwarding:
+  Enabled: false
+
 plugins:
   - rubocop-rspec
   - rubocop-performance

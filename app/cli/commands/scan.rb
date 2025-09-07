@@ -60,7 +60,7 @@ module Cli
         puts CLI::UI.fmt "{{bold:Total price:}} {{green:#{format_price(@checkout.total)}}}"
       end
 
-      sig { params(name: String, block: T.untyped).void }
+      sig { params(name: String, block: T.proc.void).void }
       def frame(name, &block)
         CLI::UI::StdoutRouter.enable
         CLI::UI::Frame.open(name, &block)
