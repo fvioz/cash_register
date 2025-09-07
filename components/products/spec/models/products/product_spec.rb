@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-# typed: tur
+# typed: false
 
 require 'spec_helper'
 
