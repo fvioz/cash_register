@@ -1,10 +1,4 @@
 # typed: true
 # frozen_string_literal: true
 
-require 'bigdecimal'
-require 'bigdecimal/util'
-require 'cli/ui'
-require 'debug'
-require 'rspec'
-require 'simplecov'
-require 'zeitwerk'
+require_relative File.expand_path('../../environment', __dir__)

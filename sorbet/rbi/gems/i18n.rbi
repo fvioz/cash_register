@@ -10,6 +10,41 @@
 # i18n-1.14.7
 
 module I18n
+  extend I18n::Base
+end
+module I18n::Utils
+end
+class I18n::ExceptionHandler
+end
+class I18n::ArgumentError < ArgumentError
+end
+class I18n::Disabled < I18n::ArgumentError
+end
+class I18n::InvalidLocale < I18n::ArgumentError
+end
+class I18n::InvalidLocaleData < I18n::ArgumentError
+end
+class I18n::MissingTranslation < I18n::ArgumentError
+  include I18n::MissingTranslation::Base
+end
+module I18n::MissingTranslation::Base
+end
+class I18n::MissingTranslationData < I18n::ArgumentError
+  include I18n::MissingTranslation::Base
+end
+class I18n::InvalidPluralizationData < I18n::ArgumentError
+end
+class I18n::MissingInterpolationArgument < I18n::ArgumentError
+end
+class I18n::ReservedInterpolationKey < I18n::ArgumentError
+end
+class I18n::UnknownFileType < I18n::ArgumentError
+end
+class I18n::UnsupportedMethod < I18n::ArgumentError
+end
+class I18n::InvalidFilenames < I18n::ArgumentError
+end
+module I18n::Base
 end
 module I18n::Backend
 end
@@ -39,6 +74,8 @@ end
 module I18n::Backend::Chain::Implementation
   include I18n::Backend::Base
 end
+module I18n::Backend::Fallbacks
+end
 module I18n::Backend::Flatten
 end
 module I18n::Gettext
@@ -50,6 +87,8 @@ end
 module I18n::Backend::Gettext
 end
 class I18n::Backend::Gettext::PoData < Hash
+end
+class I18n::Config
 end
 class I18n::Backend::KeyValue
   include I18n::Backend::KeyValue::Implementation
@@ -75,12 +114,19 @@ module I18n::Gettext::Helpers
 end
 module I18n::Locale
 end
+class I18n::Locale::Fallbacks < Hash
+end
 module I18n::Locale::Tag
 end
-class I18n::Locale::Tag::Rfc4646 < Anonymous_Struct_7
+module I18n::Locale::Tag::Parents
+end
+class I18n::Locale::Tag::Rfc4646 < Anonymous_Struct_8
   include I18n::Locale::Tag::Parents
 end
 module I18n::Locale::Tag::Rfc4646::Parser
+end
+class I18n::Locale::Tag::Simple
+  include I18n::Locale::Tag::Parents
 end
 module I18n::Tests
 end

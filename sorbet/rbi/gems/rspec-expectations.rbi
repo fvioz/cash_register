@@ -82,7 +82,7 @@ class RSpec::Expectations::Configuration
 end
 module RSpec::Expectations::Configuration::NullBacktraceFormatter
 end
-class InvalidName___Class_0x00___Differ_8
+class InvalidName___Class_0x00___Differ_12
 end
 module RSpec::Expectations::ExpectationHelper
 end
@@ -189,7 +189,7 @@ class RSpec::Matchers::BuiltIn::Equal < RSpec::Matchers::BuiltIn::BaseMatcher
 end
 class RSpec::Matchers::BuiltIn::Exist < RSpec::Matchers::BuiltIn::BaseMatcher
 end
-class RSpec::Matchers::BuiltIn::Exist::ExistenceTest < Anonymous_Struct_9
+class RSpec::Matchers::BuiltIn::Exist::ExistenceTest < Anonymous_Struct_13
 end
 class RSpec::Matchers::BuiltIn::HaveAttributes < RSpec::Matchers::BuiltIn::BaseMatcher
 end
@@ -218,7 +218,7 @@ module RSpec::Matchers::BuiltIn::CaptureStdout
 end
 module RSpec::Matchers::BuiltIn::CaptureStderr
 end
-class RSpec::Matchers::BuiltIn::CaptureStreamToTempfile < Anonymous_Struct_10
+class RSpec::Matchers::BuiltIn::CaptureStreamToTempfile < Anonymous_Struct_14
 end
 class RSpec::Matchers::BuiltIn::RaiseError
   include RSpec::Matchers::Composable

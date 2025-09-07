@@ -10,8 +10,254 @@
 # rspec-core-3.13.5
 
 module RSpec
+  extend RSpec::Core::Warnings
 end
 module RSpec::Core
+end
+module RSpec::Core::Version
+end
+module RSpec::Core::Warnings
+end
+class RSpec::Core::Set
+  include Enumerable
+end
+module RSpec::Core::FlatMap
+end
+class RSpec::Core::FilterManager
+end
+class RSpec::Core::FilterRules
+end
+class RSpec::Core::InclusionRules < RSpec::Core::FilterRules
+end
+module RSpec::Core::DSL
+end
+module RSpec::Core::Formatters
+end
+module RSpec::Core::Formatters::ConsoleCodes
+end
+class RSpec::Core::Formatters::SnippetExtractor
+end
+class RSpec::Core::Formatters::SnippetExtractor::NoSuchFileError < StandardError
+end
+class RSpec::Core::Formatters::SnippetExtractor::NoSuchLineError < StandardError
+end
+class RSpec::Core::Formatters::SnippetExtractor::NoExpressionAtLineError < StandardError
+end
+class RSpec::Core::Formatters::SyntaxHighlighter
+end
+module RSpec::Core::Formatters::SyntaxHighlighter::CodeRayImplementation
+end
+module RSpec::Core::Formatters::SyntaxHighlighter::NoSyntaxHighlightingImplementation
+end
+class RSpec::Core::Formatters::ExceptionPresenter
+end
+class RSpec::Core::Formatters::ExceptionPresenter::Factory
+end
+module RSpec::Core::Formatters::ExceptionPresenter::Factory::EmptyBacktraceFormatter
+end
+class RSpec::Core::Formatters::ExceptionPresenter::Factory::CommonBacktraceTruncater
+end
+class RSpec::Core::MultipleExceptionError < StandardError
+  include RSpec::Core::MultipleExceptionError::InterfaceTag
+end
+module RSpec::Core::MultipleExceptionError::InterfaceTag
+end
+module RSpec::Core::ShellEscape
+end
+module RSpec::Core::Formatters::Helpers
+end
+module RSpec::Core::Notifications
+end
+module RSpec::Core::Notifications::NullColorizer
+end
+class RSpec::Core::Notifications::ExampleNotification < Struct
+end
+class RSpec::Core::Notifications::ExamplesNotification
+end
+class RSpec::Core::Notifications::FailedExampleNotification < RSpec::Core::Notifications::ExampleNotification
+end
+class RSpec::Core::Notifications::PendingExampleFixedNotification < RSpec::Core::Notifications::FailedExampleNotification
+end
+class RSpec::Core::Notifications::PendingExampleFailedAsExpectedNotification < RSpec::Core::Notifications::FailedExampleNotification
+end
+class RSpec::Core::Notifications::SkippedExampleNotification < RSpec::Core::Notifications::ExampleNotification
+end
+class RSpec::Core::Notifications::SeedNotification < Struct
+end
+class RSpec::Core::Notifications::SummaryNotification < Struct
+  include RSpec::Core::ShellEscape
+end
+class RSpec::Core::Notifications::ProfileNotification
+end
+class RSpec::Core::Notifications::DeprecationNotification < Struct
+end
+class RSpec::Core::Notifications::NullNotification
+end
+class RSpec::Core::Notifications::CustomNotification < Struct
+end
+class RSpec::Core::Reporter
+end
+class RSpec::Core::NullReporter
+end
+module RSpec::Core::Hooks
+end
+class RSpec::Core::Hooks::BeforeHook < RSpec::Core::Hooks::Hook
+end
+class RSpec::Core::Hooks::AfterHook < RSpec::Core::Hooks::Hook
+end
+class RSpec::Core::Hooks::AfterContextHook < RSpec::Core::Hooks::Hook
+end
+class RSpec::Core::Hooks::AroundHook < RSpec::Core::Hooks::Hook
+end
+class RSpec::Core::Hooks::HookCollections
+end
+module RSpec::Core::MemoizedHelpers
+end
+class RSpec::Core::MemoizedHelpers::ThreadsafeMemoized
+end
+class RSpec::Core::MemoizedHelpers::NonThreadSafeMemoized
+end
+class RSpec::Core::MemoizedHelpers::ContextHookMemoized
+end
+class RSpec::Core::MemoizedHelpers::ContextHookMemoized::Before < RSpec::Core::MemoizedHelpers::ContextHookMemoized
+end
+class RSpec::Core::MemoizedHelpers::ContextHookMemoized::After < RSpec::Core::MemoizedHelpers::ContextHookMemoized
+end
+module RSpec::Core::MemoizedHelpers::ClassMethods
+end
+module RSpec::Core::Metadata
+end
+class RSpec::Core::Metadata::HashPopulator
+end
+class RSpec::Core::Metadata::ExampleHash < RSpec::Core::Metadata::HashPopulator
+end
+class RSpec::Core::Metadata::ExampleGroupHash < RSpec::Core::Metadata::HashPopulator
+end
+module RSpec::Core::HashImitatable
+end
+module RSpec::Core::HashImitatable::ClassMethods
+end
+class RSpec::Core::LegacyExampleGroupHash
+  extend RSpec::Core::HashImitatable::ClassMethods
+  include RSpec::Core::HashImitatable
+end
+module RSpec::Core::MetadataFilter
+end
+module RSpec::Core::FilterableItemRepository
+end
+class RSpec::Core::FilterableItemRepository::UpdateOptimized
+end
+class RSpec::Core::FilterableItemRepository::QueryOptimized < RSpec::Core::FilterableItemRepository::UpdateOptimized
+end
+module RSpec::Core::Pending
+end
+class RSpec::Core::Pending::SkipDeclaredInExample < StandardError
+end
+class RSpec::Core::Pending::PendingExampleFixedError < StandardError
+end
+class RSpec::Core::Formatters::Loader
+end
+module RSpec::Core::Ordering
+end
+class RSpec::Core::Ordering::Identity
+end
+class RSpec::Core::Ordering::Random
+end
+class RSpec::Core::Ordering::RecentlyModified
+end
+class RSpec::Core::Ordering::Custom
+end
+class RSpec::Core::Ordering::Delayed
+end
+class RSpec::Core::Ordering::Registry
+end
+class RSpec::Core::Ordering::ConfigurationManager
+end
+class RSpec::Core::World
+end
+module RSpec::Core::World::Null
+end
+class RSpec::Core::BacktraceFormatter
+end
+module RSpec::Core::RubyProject
+end
+class RSpec::Core::Formatters::DeprecationFormatter
+end
+class RSpec::Core::Formatters::DeprecationFormatter::ImmediatePrinter
+end
+class RSpec::Core::Formatters::DeprecationFormatter::DelayedPrinter
+end
+class RSpec::Core::Formatters::DeprecationFormatter::RaiseErrorStream
+end
+class RSpec::Core::Formatters::DeprecationFormatter::FileStream
+end
+class RSpec::Core::DeprecationError < StandardError
+end
+class RSpec::Core::OutputWrapper
+end
+class RSpec::Core::Configuration
+  include RSpec::Core::Configuration::Readers
+  include RSpec::Core::Hooks
+end
+module RSpec::Core::Configuration::Readers
+end
+class RSpec::Core::Configuration::MustBeConfiguredBeforeExampleGroupsError < StandardError
+end
+class RSpec::Core::Configuration::DeprecationReporterBuffer
+end
+module RSpec::Core::Configuration::ExposeCurrentExample
+end
+class RSpec::Core::Parser
+end
+class RSpec::Core::ConfigurationOptions
+end
+class RSpec::Core::Runner
+end
+module RSpec::Core::Invocations
+end
+class RSpec::Core::Invocations::InitializeProject
+end
+class RSpec::Core::Invocations::DRbWithFallback
+end
+class RSpec::Core::Invocations::Bisect
+end
+class RSpec::Core::Invocations::PrintVersion
+end
+class RSpec::Core::Example
+end
+class RSpec::Core::Example::Procsy
+end
+class RSpec::Core::Example::ExecutionResult
+  extend RSpec::Core::HashImitatable::ClassMethods
+  include RSpec::Core::HashImitatable
+end
+class RSpec::Core::SuiteHookContext < RSpec::Core::Example
+end
+class RSpec::Core::SharedExampleGroupModule < Module
+end
+module RSpec::Core::SharedExampleGroup
+end
+module RSpec::Core::SharedExampleGroup::TopLevelDSL
+end
+class RSpec::Core::SharedExampleGroup::Registry
+end
+class RSpec::Core::ExampleGroup
+  extend RSpec::Core::Hooks
+  extend RSpec::Core::MemoizedHelpers::ClassMethods
+  extend RSpec::Core::SharedExampleGroup
+  include RSpec::Core::MemoizedHelpers
+  include RSpec::Core::Pending
+end
+class RSpec::Core::ExampleGroup::WrongScopeError < NoMethodError
+end
+class RSpec::Core::AnonymousExampleGroup < RSpec::Core::ExampleGroup
+end
+class RSpec::Core::SharedExampleGroupInclusionStackFrame
+end
+module RSpec::ExampleGroups
+  extend RSpec::Support::RecursiveConstMethods
+end
+class RSpec::Core::Time
 end
 module RSpec::Core::SharedContext
 end
@@ -26,8 +272,6 @@ end
 class RSpec::Core::Profiler
 end
 class RSpec::Core::DidYouMean
-end
-module RSpec::Core::Formatters
 end
 class RSpec::Core::Formatters::BaseFormatter
 end

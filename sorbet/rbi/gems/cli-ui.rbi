@@ -74,5 +74,5 @@ class CLI::UI::StdoutRouter::Capture::BlockingInput
   extend T::Private::Methods::SingletonMethodHooks
   extend T::Sig
 end
-class InvalidName___Class_0x00___NotEnabled_11 < StandardError
+class InvalidName___Class_0x00___NotEnabled_15 < StandardError
 end

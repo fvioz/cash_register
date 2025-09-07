@@ -3,3 +3,14 @@
 # Please instead update this file by running `bin/tapioca todo`.
 
 # typed: false
+
+module ::Packs; end
+module ::Packs::Pack; end
+module ::RSpec; end
+module ::SimpleCov; end
+module Application::Zeitwerk::Loader; end
+module Cli::Commands::Scan::CLI::UI; end
+module Cli::Commands::Scan::CLI::UI::Frame; end
+module Cli::Commands::Scan::CLI::UI::StdoutRouter; end
+module Cli::Commands::Scan::Money; end
+module Cli::Thor; end

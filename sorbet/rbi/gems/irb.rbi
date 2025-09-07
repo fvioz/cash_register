@@ -113,7 +113,7 @@ module IRB::Command::RubyArgsExtractor
 end
 module IRB::Debug
 end
-module InvalidName___Class_0x00___SkipPathHelperForIRB_3
+module InvalidName___Class_0x00___SkipPathHelperForIRB_4
 end
 class IRB::Command::Debug < IRB::Command::Base
 end
@@ -234,11 +234,11 @@ class IRB::Statement::Command < IRB::Statement
 end
 class IRB::Locale
 end
-class InvalidName___Class_0x00___Vec_4
+class InvalidName___Class_0x00___Vec_5
 end
-class InvalidName___Class_0x00___Canvas_5
+class InvalidName___Class_0x00___Canvas_6
 end
-class InvalidName___Class_0x00___RubyModel_6
+class InvalidName___Class_0x00___RubyModel_7
 end
 class IRB::Abort < Exception
 end

@@ -9,6 +9,38 @@
 #
 # sexp_processor-4.17.4
 
+class Sexp < Array
+end
+class Sexp::Matcher < Sexp
+end
+class Sexp::Matcher::Parser
+end
+class Sexp::Wild < Sexp::Matcher
+end
+class Sexp::Remaining < Sexp::Matcher
+end
+class Sexp::Any < Sexp::Matcher
+end
+class Sexp::All < Sexp::Matcher
+end
+class Sexp::Not < Sexp::Matcher
+end
+class Sexp::Child < Sexp::Matcher
+end
+class Sexp::Atom < Sexp::Matcher
+end
+class Sexp::Pattern < Sexp::Matcher
+end
+class Sexp::Klass < Sexp::Pattern
+end
+class Sexp::Type < Sexp::Matcher
+end
+class Sexp::Include < Sexp::Matcher
+end
+class Sexp::Sibling < Sexp::Matcher
+end
+class Sexp::MatchCollection < Array
+end
 class SexpProcessor
 end
 class SexpProcessor::Environment

@@ -10,8 +10,50 @@
 # rspec-support-3.13.5
 
 module RSpec
+  extend RSpec::Support::Warnings
 end
 module RSpec::Support
+end
+module RSpec::Support::Version
+end
+class RSpec::Support::ComparableVersion
+  include Comparable
+end
+module RSpec::Support::OS
+end
+module RSpec::Support::Ruby
+end
+module RSpec::Support::RubyFeatures
+end
+module RSpec::Support::AllExceptionsExceptOnesWeMustNotRescue
+end
+class RSpec::CallerFilter
+end
+module RSpec::Support::Warnings
+end
+class RSpec::Support::EncodedString
+end
+class RSpec::Support::ReentrantMutex
+end
+class RSpec::Support::Mutex < Thread::Mutex
+end
+class RSpec::Support::DirectoryMaker
+end
+class RSpec::Support::MethodSignature
+end
+class RSpec::Support::MethodSignatureExpectation
+end
+class RSpec::Support::BlockSignature < RSpec::Support::MethodSignature
+end
+class RSpec::Support::MethodSignatureVerifier
+end
+class RSpec::Support::LooseSignatureVerifier < RSpec::Support::MethodSignatureVerifier
+end
+class RSpec::Support::LooseSignatureVerifier::SignatureWithKeywordArgumentsMatcher
+end
+module RSpec::Support::WithKeywordsWhenNeeded
+end
+module RSpec::Support::RecursiveConstMethods
 end
 class RSpec::Support::ObjectFormatter
 end
